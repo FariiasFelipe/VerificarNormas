@@ -593,7 +593,7 @@ def verificar_atualizacoes_abnt():
     if response.status_code == 200:
         soup = BeautifulSoup(response.content, 'html.parser')
 
-        # Procura pelas últimas atualizações
+        
         atualizacoes_normas = soup.find('ul', class_='latest-news-list')
 
         if atualizacoes_normas:
